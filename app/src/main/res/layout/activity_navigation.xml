@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".15"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".78"
+                android:background="@color/black"
+                android:gravity="center"
+                android:text="@string/closest"
+                android:textColor="@color/colorAccent2"
+                android:textSize="60sp"
+                android:textStyle="bold"
+                android:typeface="monospace" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".02"/>
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".20"
+                android:padding="10dp"
+                android:background="@color/black"
+                android:scaleType="fitCenter"
+                android:src="@drawable/search_pic"
+                android:tint="@color/colorAccent2" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/closestList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".45"></ListView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".15"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".78"
+                android:background="@color/black"
+                android:gravity="center"
+                android:text="@string/preferred"
+                android:textColor="@color/colorAccent2"
+                android:textSize="55sp"
+                android:textStyle="bold"
+                android:typeface="monospace" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".02"/>
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".20"
+                android:background="@color/black"
+                android:scaleType="fitCenter"
+                android:src="@drawable/plus_minus_pic"
+                android:tint="@color/colorAccent2" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/preferedList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".45"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

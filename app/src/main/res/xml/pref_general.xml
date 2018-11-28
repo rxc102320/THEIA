@@ -1,0 +1,40 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="gps_switch"
+        android:summary="@string/pref_gps_summary"
+        android:title="@string/gpsString" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="camera_switch"
+        android:summary="@string/pref_camera_view_summary"
+        android:title="@string/camera_view" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="compass_switch"
+        android:summary="@string/pref_compass_summary"
+        android:title="@string/compassString" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="suggest_switch"
+        android:summary="@string/pref_suggestion_summary"
+        android:title="@string/suggestString" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="fall_switch"
+        android:summary="@string/pref_fall_summary"
+        android:title="@string/fallString" />
+
+    <ListPreference
+        android:defaultValue="80"
+        android:entries="@array/pref_volume_entries"
+        android:entryValues="@array/pref_volume_values"
+        android:key="example_list"
+        android:title="@string/pref_volume" />
+
+</PreferenceScreen>
